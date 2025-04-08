@@ -279,6 +279,8 @@ button:focus {
   filter: brightness(150%);
 }
 
+/* work */
+
 #work {
   width: 100%;
   align-items: center;
@@ -293,15 +295,36 @@ button:focus {
 .work__projects {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 20px;
   font-size: 1.5rem;
 }
 
 .work__subject {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
-.work__subject__button {
+.work__subject button {
+  font-size: 1.2rem;
+}
+
+.work__subject span {
   font-weight: bold;
+}
+
+.work__project__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project__img {
+  width: 500px;
+  height: 400px;
+}
+
+.project__text {
+  margin-left: 10%;
+  margin-bottom: 10px;
 }

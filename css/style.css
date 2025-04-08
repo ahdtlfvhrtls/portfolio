@@ -366,3 +366,15 @@ button:focus {
 .license__content__box a {
   font-size: 1.5rem;
 }
+
+#contact {
+  max-width: var(--size-max-width);
+  margin: auto;
+  text-align: center;
+}
+.max-container-footer h2 {
+  font-size: 2.5rem;
+}
+.footer__email {
+  font-size: 1.2rem;
+}

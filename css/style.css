@@ -328,3 +328,41 @@ button:focus {
   margin-left: 10%;
   margin-bottom: 10px;
 }
+
+/* license */
+
+#license {
+  padding: 4rem;
+  text-align: center;
+  background-color: var(--color-primary-variant);
+  color: var(--color-text);
+}
+
+.max-container-license {
+  max-width: var(--size-max-width);
+  margin: auto;
+}
+
+.license__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.license__title__sub {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.license__content__box {
+  display: flex;
+  margin: 20px;
+}
+
+.license__content__box p {
+  width: 80%;
+  margin: 20px;
+}
+
+.license__content__box a {
+  font-size: 1.5rem;
+}

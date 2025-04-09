@@ -9,13 +9,13 @@
 :root {
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
-  --color-accent: var(--color-blue);
-  --color-accent-variant: var(--color-orange);
+  --color-accent: var(--color-orange);
+  --color-accent-variant: var(--color-blue);
   --color-text: var(--color-white);
   /* colors */
   --color-white: #fff;
   --color-black: #050a13;
-  --color-blue: #03e8f9;
+  --color-blue: #df1616;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
   /* size */
@@ -195,6 +195,7 @@ button:focus {
   margin-bottom: 1rem;
 }
 .job__img {
+  margin-left: 15%;
   width: 300px;
   height: 200px;
 }
@@ -265,6 +266,10 @@ button:focus {
   padding: 1rem;
   background-color: var(--color-primary);
   filter: brightness(150%);
+}
+
+.tools__title__etc {
+  padding-bottom: 3rem;
 }
 
 #work {
@@ -359,8 +364,8 @@ button:focus {
   left: 50%;
   transform: translate(-50%);
   margin: 0.5rem 0;
-  height: 2px;
   width: 50px;
+  height: 2px;
   background-color: var(--color-accent);
 }
 
@@ -429,4 +434,39 @@ button:focus {
 
 .contact__link:hover {
   color: var(--color-accent);
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  .skills,
+  .projects,
+  .tools {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .skill,
+  .project,
+  .tools__coding,
+  .tools__tools,
+  .tools__etc {
+    width: 99%;
+  }
+}
+
+/* 테블릿 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills,
+  .projects,
+  .tools {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .skill,
+  .project,
+  .tools__coding,
+  .tools__etc {
+    width: 49%;
+  }
 }
